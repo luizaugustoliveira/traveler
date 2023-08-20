@@ -16,6 +16,7 @@
 
 /* Viagens */
 @import "./viagens/viagens-lista.css";
+@import "./viagens/viagens.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";
