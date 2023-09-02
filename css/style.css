@@ -20,6 +20,7 @@
 
 /* Viagem */
 @import "./viagem/viagem.css";
+@import "./viagem/seguro.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";
