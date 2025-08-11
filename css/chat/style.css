@@ -5,11 +5,11 @@
 }
 
 .chat-container {
-    background-color: #903cf2;
+    background-color: var(--cor-p1);
     border-radius: 0.625rem;
     padding-top: 4px;
     margin: 3rem auto;
-    max-width: 36rem;
+    max-width: 72rem;
     width: 90%;
 }
 
@@ -22,7 +22,7 @@
     padding: 2rem;
     padding-top: 1.5rem;
     border-radius: 0.5rem;
-    background-color: #2a2634;
+    background-color: var(--cor-11);
 }
 
 .chat-container header {
@@ -37,7 +37,7 @@
 
 .chat-container p {
     letter-spacing: -0.18px;
-    color: #a1a1aa;
+    color: white;
 }
 
 /* Animações */
@@ -66,7 +66,7 @@
 .chat-container input,
 .chat-container select {
     all: unset;
-    border: 2px solid #9147ff;
+    border: 2px solid var(--cor-p1);
     border-radius: 0.5rem;
     padding: 0.675rem;
     font-size: 0.875rem;
@@ -78,10 +78,14 @@
     flex: 1;
 }
 
+.chat-container #questionInput {
+    flex-basis: 100%;
+}
+
 .chat-container button {
     width: 100%;
     border: 0;
-    background-color: #903cf2;
+    background-color: var(--cor-p1);
     padding: 0.675rem;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -110,12 +114,16 @@
     background: rgba(0, 0, 0, 0.4);
     border-radius: 0.5rem;
     padding: 1.25rem;
-    border-left: 4px solid #903cf2;
+    border-left: 4px solid var(--cor-p1);
 }
 
 .chat-container #aiResponse ul {
     padding-left: 1.5rem;
     opacity: 0.8;
+}
+
+.chat-container #aiResponse {
+    color: white;
 }
 
 .chat-container #aiResponse p {

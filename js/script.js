@@ -97,10 +97,10 @@ const perguntarAI = async (question, local, apiKey) => {
     - Nunca responda itens que você não tenha certeza de que existe no lugar atualmente.
 
     ## Resposta
-    - Seja direto e responda no máximo 500 caracteres
+    - Seja direto
     - Responda em markdown
     - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário está querendo.
-    
+
     ---
     Aqui está a pergunta do usuário: ${question}
   `;
@@ -168,4 +168,3 @@ const enviarFormulario = async (event) => {
 };
 
 form.addEventListener("submit", enviarFormulario);
-
