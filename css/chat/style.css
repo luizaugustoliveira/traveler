@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chat-container {
+    background-color: #903cf2;
+    border-radius: 0.625rem;
+    padding-top: 4px;
+    margin: 3rem auto;
+    max-width: 36rem;
+    width: 90%;
+}
+
+.chat-container * {
+    font-family: "Inter", sans-serif;
+    line-height: 160%;
+}
+
+.chat-container > div {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2a2634;
+}
+
+.chat-container header {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.chat-container h2 {
+    letter-spacing: -0.47px;
+    color: white;
+}
+
+.chat-container p {
+    letter-spacing: -0.18px;
+    color: #a1a1aa;
+}
+
+/* Animações */
+.chat-container {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation-name: appear;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-container form {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+.chat-container input,
+.chat-container select {
+    all: unset;
+    border: 2px solid #9147ff;
+    border-radius: 0.5rem;
+    padding: 0.675rem;
+    font-size: 0.875rem;
+    background-color: #00000066;
+    color: white;
+}
+
+.chat-container input {
+    flex: 1;
+}
+
+.chat-container button {
+    width: 100%;
+    border: 0;
+    background-color: #903cf2;
+    padding: 0.675rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    transition: all 0.3s;
+    color: white;
+}
+
+.chat-container button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
+}
+
+.chat-container button:disabled {
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    opacity: 0.7;
+    color: #a1a1aa;
+}
+
+.chat-container #aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #903cf2;
+}
+
+.chat-container #aiResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+.chat-container #aiResponse p {
+    color: white;
+}
+
+.chat-container .loading {
+    animation: pulse 1s infinite;
+}
+
+.chat-container .hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}

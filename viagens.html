@@ -11,11 +11,14 @@
 
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/chat/style.css">
   <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body id="viagens">
@@ -50,7 +53,9 @@
       </div>
       <div class="viagens-conteudo">
         <h2 class="font-1-xl">Praia do Madeiro (RN)</h2>
-        <p class="font-2-s cor-8">Praia do Madeiro, no Rio Grande do Norte, encanta com suas areias douradas, mar azul cristalino e exuberante vegetação, oferecendo o cenário perfeito para relaxar e apreciar a beleza da natureza.</p>
+        <p class="font-2-s cor-8">Praia do Madeiro, no Rio Grande do Norte, encanta com suas areias douradas, mar azul
+          cristalino e exuberante vegetação, oferecendo o cenário perfeito para relaxar e apreciar a beleza da natureza.
+        </p>
         <ul class="font-1-m cor-8">
           <li>
             <img src="./img/icones/surfing.svg" alt="">
@@ -81,7 +86,8 @@
         </div>
         <div class="viagens-conteudo">
           <h2 class="font-1-xl cor-0">Praia de Antunes (AL)</h2>
-          <p class="font-2-s cor-5">Com suas areias brancas e mar calmo de águas mornas, a Praia de Antunes, em Alagoas, é um paraíso tropical perfeito para relaxar e desfrutar de momentos inesquecíveis à beira-mar.</p>
+          <p class="font-2-s cor-5">Com suas areias brancas e mar calmo de águas mornas, a Praia de Antunes, em Alagoas,
+            é um paraíso tropical perfeito para relaxar e desfrutar de momentos inesquecíveis à beira-mar.</p>
           <ul class="font-1-m cor-5">
             <li>
               <img src="./img/icones/mergulho.svg" alt="">
@@ -112,7 +118,8 @@
       </div>
       <div class="viagens-conteudo">
         <h2 class="font-1-xl">Porto de Galinhas (PE)</h2>
-        <p class="font-2-s cor-8">A Praia de Porto de Galinhas, em Pernambuco,  possui diversas atividades aquáticas e a rica vida marinha convidam os visitantes a mergulhar em uma experiência única de conexão com a natureza</p>
+        <p class="font-2-s cor-8">A Praia de Porto de Galinhas, em Pernambuco, possui diversas atividades aquáticas e a
+          rica vida marinha convidam os visitantes a mergulhar em uma experiência única de conexão com a natureza</p>
         <ul class="font-1-m cor-8">
           <li>
             <img src="./img/icones/barco.svg" alt="">
@@ -128,14 +135,33 @@
           </li>
           <li>
             <img src="./img/icones/caiaque.svg" alt="">
-            Prática de Stand Up Paddle 
+            Prática de Stand Up Paddle
           </li>
         </ul>
         <a class="botao seta" href="./viagens/porto.html">Mais Sobre</a>
       </div>
     </div>
 
-  </main>
+    <section class="chat-container" aria-label="Assistente de Recomendação">
+        <div>
+          <h2 class="font-1-xl cor-0">Assistente de Recomendação</h2>
+          <p class="font-2-s cor-5">Pergunte sobre pontos turísticos e atividades interessantes para fazer nos lugares que você estiver visitando.</p>
+          <form id="form">
+            <input id="apiKey" type="password" placeholder="Informe a sua API KEY do Gemini" required />
+            <select id="localSelect">
+              <option value="">Selecione um local</option>
+              <option value="Praia do Madeiro">Praia do Madeiro</option>
+              <option value="Praia de Antunes">Praia de Antunes</option>
+              <option value="Porto de Galinhas">Porto de Galinhas</option>
+            </select>
+            <input id="questionInput" type="text" placeholder="Faça uma pergunta sobre o local selecionado" required />
+            <button id="askButton">Perguntar</button>
+          </form>
+          <div id="aiResponse" class="hidden">
+            <div class="response-content"></div>
+          </div>
+        </div>
+    </section>
 
   <footer class="footer-bg">
     <div class="footer container">
@@ -169,9 +195,11 @@
           </ul>
         </nav>
       </div>
-      <p class="footer-copy font-2-m cor-6">Traveler © Site fictício implementado por Luiz Augusto Oliveira de Farias</p>
+      <p class="footer-copy font-2-m cor-6">Traveler © Site fictício implementado por Luiz Augusto Oliveira de Farias
+      </p>
     </div>
   </footer>
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
