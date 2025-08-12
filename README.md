@@ -1,14 +1,10 @@
-# ✈️ Traveler - Sua Agência de Viagem com Inteligência Artificial
+# Traveler - Sua Agência de Viagem com Inteligência Artificial
 
-![Traveler Banner](./img/fotos/intro.jpg)
+O repositório da **Traveler** representa uma agência de viagens fictícia desenvolvida para oferecer uma experiência de usuário intuitiva com a integração de um **Assistente de Recomendação powered by IA (Gemini API)**.
 
-Bem-vindo ao repositório da **Traveler**, uma agência de viagens fictícia desenvolvida para oferecer uma experiência de usuário intuitiva e, o mais importante, inovadora com a integração de um **Assistente de Recomendação powered by IA (Gemini API)**.
+## Funcionalidades Principais
 
-Este projeto visa demonstrar habilidades em desenvolvimento web front-end, incluindo HTML semântico, CSS responsivo e JavaScript dinâmico, além de uma introdução à integração de APIs de Inteligência Artificial para enriquecer a experiência do usuário.
-
-## ✨ Funcionalidades Principais
-
-*   **Página Inicial (Home):** Uma introdução atraente aos serviços da agência, com destaque para os destinos mais populares.
+*   **Página Inicial (Home):** Uma introdução aos serviços da agência, com destaque para os destinos mais populares.
 *   **Lista de Viagens:** Detalhes sobre destinos turísticos, incluindo descrições, preços e atividades.
 *   **Seguros:** Informações sobre os planos de seguro de viagem oferecidos.
 *   **Orçamento:** Um formulário interativo para solicitar orçamentos personalizados de viagens e seguros.
@@ -16,7 +12,7 @@ Este projeto visa demonstrar habilidades em desenvolvimento web front-end, inclu
 *   **Termos e Condições:** Documento com as políticas de uso do serviço.
 *   **Design Responsivo:** O layout se adapta perfeitamente a diferentes tamanhos de tela (desktops, tablets e smartphones).
 *   **Animações Suaves:** Utilização de `simple-anime.js` para adicionar transições e animações elegantes aos elementos da página.
-*   **Assistente de Recomendação (IA):** Uma funcionalidade inovadora localizada na página de "Viagens" (`viagens.html`). Este assistente permite que o usuário faça perguntas sobre os destinos listados (Praia do Madeiro, Praia de Antunes, Porto de Galinhas) e receba recomendações personalizadas de pontos turísticos, restaurantes e atividades, utilizando a API Gemini (Google AI Studio).
+*   **Assistente de Recomendação (IA):** Este assistente permite que o usuário faça perguntas sobre os destinos listados (Praia do Madeiro, Praia de Antunes, Porto de Galinhas) e receba recomendações personalizadas de pontos turísticos, restaurantes e atividades, utilizando a API Gemini (Google AI Studio).
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -29,28 +25,7 @@ Este projeto visa demonstrar habilidades em desenvolvimento web front-end, inclu
 
 ## ⚙️ Como Rodar o Projeto Localmente
 
-Para configurar e rodar o projeto em sua máquina:
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/seu-usuario/traveler.git
-    cd traveler
-    ```
-2.  **Abra o `index.html`:**
-    Você pode simplesmente abrir o arquivo `traveler/index.html` em seu navegador. Para uma melhor experiência e para que a funcionalidade do assistente de recomendação funcione corretamente (devido a restrições de CORS para requisições de API), é **altamente recomendável** que você sirva o projeto através de um servidor local.
-
-    Você pode usar o Live Server do VS Code, ou um comando simples no terminal:
-    *   **Com Python:**
-        ```bash
-        python -m http.server 8000
-        ```
-    *   **Com Node.js (se tiver o `http-server` instalado):**
-        ```bash
-        npx http-server
-        ```
-    Após iniciar o servidor, acesse `http://localhost:8000` (ou a porta indicada) em seu navegador.
-
-3.  **Configuração da API Key (para o Assistente de Recomendação):**
+1.  **Configuração da API Key (para o Assistente de Recomendação):**
     Para utilizar o Assistente de Recomendação, você precisará de uma API Key do Google AI Studio (Gemini API).
     *   Crie uma conta no [Google AI Studio](https://aistudio.google.com/).
     *   Obtenha uma API Key e insira-a no campo "Informe a sua API KEY do Gemini" na seção "Assistente de Recomendação" na página de "Viagens".
@@ -122,11 +97,3 @@ traveler/
 
 **Luiz Augusto Oliveira de Farias**
 [LinkedIn](https://www.linkedin.com/in/luiz-augusto-oliveira/)
-
-## 📄 Licença
-
-Este projeto é fictício e foi desenvolvido para fins de estudo e demonstração. Sinta-se à vontade para inspecionar, aprender e usar o código como referência.
-
----
-
-Espero que este README apresente seu projeto de forma profissional e destaque a funcionalidade de IA no LinkedIn! Se precisar de mais alguma coisa, me diga.
