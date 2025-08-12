@@ -1,68 +1,70 @@
 .viagens-lista {
-  padding-top: 60px;
-  padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 
 .viagens-lista h2 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .viagens-lista ul {
-  display: flex;
-  gap: 40px;
-  padding: 0 20px 20px 20px;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
 }
 
 #bicicleta .bicicletas-lista ul {
-  padding: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .viagens-lista li {
-  flex: 1;
-  min-width: 280px;
+    flex: 1;
+    min-width: 280px;
 }
 
 .viagens-lista a {
-  display: block;
+    display: block;
 }
 
 .viagens-lista img {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .viagens-lista h3 {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .viagens-lista h3::before {
-  content: "";
-  display: inline-block;
-  height: 8px;
-  width: 12px;
-  margin-right: 8px;
-  background-color: var(--cor-p1);
-  transition: width 0.2s;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: var(--cor-p1);
+    transition: width 0.2s;
 }
 
 .viagens-lista a:hover h3::before {
-  width: 24px;
+    width: 24px;
 }
 
 .viagens-lista li span {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 @media (max-width: 800px) {
-  .viagens-lista {
-    padding-bottom: 60px;
-  }
-  .viagens-lista ul {
-    gap: 20px;
-  }
+    .viagens-lista {
+        padding-bottom: 60px;
+    }
+    .viagens-lista ul {
+        gap: 20px;
+    }
 }
